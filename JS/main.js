@@ -50,10 +50,12 @@ function play(){
     turnNum += 1;
     if (turnNum%2 == 0){
         this.textContent = "O"
+        oArray.push(this)
     }
     if (turnNum%2 == 1){
         this.textContent = "X"
-        }
+        xArray.push(this)
+    }
         this.className = "played"
     return;
 };
