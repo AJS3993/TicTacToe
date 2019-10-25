@@ -10,7 +10,7 @@ div.column {
     flex-direction: row;
     margin: 0;
     padding: 0;
-    
+
 }
 
 div {
@@ -18,52 +18,53 @@ div {
     padding: 2rem;
     color: black;
     cursor: pointer;
+    font-size: 25px;
 }
 
 div #A1{
-    border-right: 2px solid black;
-    border-bottom: 2px solid black;
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
 }
 
 div #A2 {
-    border-left: 2px solid black;
-    border-bottom: 2px solid black;
-    border-right: 2px solid black;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
 }
 
 div #A3 {
-    border-left: 2px solid black;
-    border-bottom: 2px solid black;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
 }
 
 div #B1 {
-    border-top: 2px solid black;
-    border-right: 2px solid black;
-    border-bottom: 2px solid black;
+    border-top: 3px solid black;
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
 }
 
 div #B2 {
-    border: 2px solid black;
+    border: 3px solid black;
 }
 
 div #B3{
-    border-top: 2px solid black;
-    border-left: 2px solid black;
-    border-bottom: 2px solid black;
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
 }
 
 div #C1 {
-    border-top: 2px solid black;
-    border-right: 2px solid black;
+    border-top: 3px solid black;
+    border-right: 3px solid black;
 }
 
 div #C2{
-    border-left: 2px solid black;
-    border-top: 2px solid black;
-    border-right: 2px solid black;
+    border-left: 3px solid black;
+    border-top: 3px solid black;
+    border-right: 3px solid black;
 }
 
 div #C3 {
-    border-top: 2px solid black;
-    border-left: 2px solid black;
+    border-top: 3px solid black;
+    border-left: 3px solid black;
 }
