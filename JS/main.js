@@ -61,17 +61,17 @@ function play(){
     turnNum += 1;
     if (turnNum%2 == 0){
         this.textContent = "O"
-        oArray.push(this)
+        oArray.push(this.id)
     }
     if (turnNum%2 == 1){
         this.textContent = "X"
-        xArray.push(this)
+        xArray.push(this.id)
     }
         this.className = "played"
     return;
 };
 
 
-if (xArray == winArrays[1]){
-    console.log("hi")
+if (winArrays.includes(xArray) == true){
+    alert ("hi")
 }
