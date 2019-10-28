@@ -213,11 +213,17 @@ if (oArray.includes('A3')){
 
 function reset(){
     location.reload();
-    //turnNum = 0;
-    //xArray = [];
-    //oArray = [];
+    // turnNum = 0;
+    // xArray = [];
+    // oArray = [];
     //xreset.className += 'available';
     //xreset.textContent = '&nbsp;&nbsp;&nbsp;';
     //oreset.className += 'available';
     //oreset.textContent = '&nbsp;&nbsp;&nbsp;';
+    // document.querySelectorAll('.xplayed').forEach(function(tag){
+        // tag.innerText="   "
+    // })
+    //document.querySelectorAll('.oplayed').forEach(function(tag){
+        // tag.innerText="   "
+    // })
 }
