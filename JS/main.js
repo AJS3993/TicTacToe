@@ -24,7 +24,10 @@ const C1Box = document.getElementById('C1');
 const C2Box = document.getElementById('C2');
 const C3Box = document.getElementById('C3');
 
+var xreset = document.getElementsByClassName('xplayed');
+var oreset = document.getElementsByClassName('oplayed');
 
+var resetButton = document.getElementById("button");
 /*----- event listeners -----*/
 
 A1Box.addEventListener("click", play);
@@ -39,7 +42,7 @@ C1Box.addEventListener("click", play);
 C2Box.addEventListener("click", play);
 C3Box.addEventListener("click", play);
 
-
+resetButton.addEventListener('click', reset);
 
 /*----- functions -----*/
 
@@ -71,7 +74,8 @@ function render(){
     if (xArray.includes('A1')){
         if (xArray.includes('A2')){
             if (xArray.includes('A3')){ 
-                document.getElementById("msg").innerHTML = "X Wins!" 
+                document.getElementById("msg").innerHTML = "X Wins!"
+                
             }  
         }
     }
@@ -79,7 +83,8 @@ function render(){
     if (xArray.includes('B1')){
         if (xArray.includes('B2')){
             if (xArray.includes('B3')){ 
-                document.getElementById("msg").innerHTML = "X Wins!"  
+                document.getElementById("msg").innerHTML = "X Wins!"
+                  
             }  
         }
     }
@@ -87,7 +92,8 @@ function render(){
     if (xArray.includes('C1')){
         if (xArray.includes('C2')){
             if (xArray.includes('C3')){ 
-                document.getElementById("msg").innerHTML = "X Wins!"  
+                document.getElementById("msg").innerHTML = "X Wins!"
+                  
             }  
         }
     }
@@ -95,7 +101,8 @@ function render(){
     if (xArray.includes('A1')){
         if (xArray.includes('B1')){
             if (xArray.includes('C1')){ 
-                document.getElementById("msg").innerHTML = "X Wins!"  
+                document.getElementById("msg").innerHTML = "X Wins!"
+                  
             }  
         }
     }
@@ -103,7 +110,8 @@ function render(){
     if (xArray.includes('A2')){
         if (xArray.includes('B2')){
             if (xArray.includes('C2')){ 
-                document.getElementById("msg").innerHTML = "X Wins!"  
+                document.getElementById("msg").innerHTML = "X Wins!"
+                  
             }  
         }
     }
@@ -132,7 +140,7 @@ function render(){
         }
     }
 
-///////////////
+//////// O Win Scenarios /////////
 
 
 if (oArray.includes('A1')){
@@ -202,3 +210,14 @@ if (oArray.includes('A3')){
 
 }
 
+
+function reset(){
+    location.reload();
+    //turnNum = 0;
+    //xArray = [];
+    //oArray = [];
+    //xreset.className += 'available';
+    //xreset.textContent = '&nbsp;&nbsp;&nbsp;';
+    //oreset.className += 'available';
+    //oreset.textContent = '&nbsp;&nbsp;&nbsp;';
+}
