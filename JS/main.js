@@ -75,6 +75,7 @@ function render(){
         if (xArray.includes('A2')){
             if (xArray.includes('A3')){ 
                 document.getElementById("msg").innerHTML = "X Wins!"
+                setTimeout(reset, 2000)
                 
             }  
         }
@@ -84,7 +85,7 @@ function render(){
         if (xArray.includes('B2')){
             if (xArray.includes('B3')){ 
                 document.getElementById("msg").innerHTML = "X Wins!"
-                  
+                setTimeout(reset, 2000) 
             }  
         }
     }
@@ -93,7 +94,7 @@ function render(){
         if (xArray.includes('C2')){
             if (xArray.includes('C3')){ 
                 document.getElementById("msg").innerHTML = "X Wins!"
-                  
+                setTimeout(reset, 2000) 
             }  
         }
     }
@@ -102,7 +103,7 @@ function render(){
         if (xArray.includes('B1')){
             if (xArray.includes('C1')){ 
                 document.getElementById("msg").innerHTML = "X Wins!"
-                  
+                setTimeout(reset, 2000) 
             }  
         }
     }
@@ -111,7 +112,7 @@ function render(){
         if (xArray.includes('B2')){
             if (xArray.includes('C2')){ 
                 document.getElementById("msg").innerHTML = "X Wins!"
-                  
+                setTimeout(reset, 2000)  
             }  
         }
     }
@@ -119,7 +120,8 @@ function render(){
     if (xArray.includes('A3')){
         if (xArray.includes('B3')){
             if (xArray.includes('C3')){ 
-                document.getElementById("msg").innerHTML = "X Wins!"  
+                document.getElementById("msg").innerHTML = "X Wins!" 
+                setTimeout(reset, 2000) 
             }  
         }
     }
@@ -127,7 +129,8 @@ function render(){
     if (xArray.includes('A1')){
         if (xArray.includes('B2')){
             if (xArray.includes('C3')){ 
-                document.getElementById("msg").innerHTML = "X Wins!"  
+                document.getElementById("msg").innerHTML = "X Wins!"
+                setTimeout(reset, 2000)  
             }  
         }
     }
@@ -135,7 +138,8 @@ function render(){
     if (xArray.includes('A3')){
         if (xArray.includes('B2')){
             if (xArray.includes('C1')){ 
-                document.getElementById("msg").innerHTML = "X Wins!"  
+                document.getElementById("msg").innerHTML = "X Wins!"
+                setTimeout(reset, 2000)  
             }  
         }
     }
@@ -146,7 +150,8 @@ function render(){
 if (oArray.includes('A1')){
     if (oArray.includes('A2')){
         if (oArray.includes('A3')){ 
-            document.getElementById("msg").innerHTML = "O Wins!"  
+            document.getElementById("msg").innerHTML = "O Wins!"
+            setTimeout(reset, 2000)  
         }  
     }
 }
@@ -154,7 +159,8 @@ if (oArray.includes('A1')){
 if (oArray.includes('B1')){
     if (oArray.includes('B2')){
         if (oArray.includes('B3')){ 
-            document.getElementById("msg").innerHTML = "O Wins!"  
+            document.getElementById("msg").innerHTML = "O Wins!"
+            setTimeout(reset, 2000)  
         }  
     }
 }
@@ -162,7 +168,8 @@ if (oArray.includes('B1')){
 if (oArray.includes('C1')){
     if (oArray.includes('C2')){
         if (oArray.includes('C3')){ 
-            document.getElementById("msg").innerHTML = "O Wins!"  
+            document.getElementById("msg").innerHTML = "O Wins!" 
+            setTimeout(reset, 2000) 
         }  
     }
 }
@@ -170,7 +177,8 @@ if (oArray.includes('C1')){
 if (oArray.includes('A1')){
     if (oArray.includes('B1')){
         if (oArray.includes('C1')){ 
-            document.getElementById("msg").innerHTML = "O Wins!" 
+            document.getElementById("msg").innerHTML = "O Wins!"
+            setTimeout(reset, 2000) 
         }  
     }
 }
@@ -178,7 +186,8 @@ if (oArray.includes('A1')){
 if (oArray.includes('A2')){
     if (oArray.includes('B2')){
         if (oArray.includes('C2')){ 
-            document.getElementById("msg").innerHTML = "O Wins!"  
+            document.getElementById("msg").innerHTML = "O Wins!"
+            setTimeout(reset, 2000)  
         }  
     }
 }
@@ -186,7 +195,8 @@ if (oArray.includes('A2')){
 if (oArray.includes('A3')){
     if (oArray.includes('B3')){
         if (oArray.includes('C3')){ 
-            document.getElementById("msg").innerHTML = "O Wins!"  
+            document.getElementById("msg").innerHTML = "O Wins!"
+            setTimeout(reset, 2000)  
         }  
     }
 }
@@ -195,6 +205,7 @@ if (oArray.includes('A1')){
     if (oArray.includes('B2')){
         if (oArray.includes('C3')){ 
             document.getElementById("msg").innerHTML = "O Wins!" 
+            setTimeout(reset, 2000)
         }  
     }
 }
@@ -202,11 +213,16 @@ if (oArray.includes('A1')){
 if (oArray.includes('A3')){
     if (oArray.includes('B2')){
         if (oArray.includes('C1')){ 
-            document.getElementById("msg").innerHTML = "O Wins!"  
+            document.getElementById("msg").innerHTML = "O Wins!"
+            setTimeout(reset, 2000)  
         }  
     }
 }
 
+if (turnNum == 9){
+    document.getElementById("msg").innerHTML = "Draw" 
+            setTimeout(reset, 2000)
+}
 
 }
 
@@ -227,3 +243,4 @@ function reset(){
         // tag.innerText="   "
     // })
 }
+
