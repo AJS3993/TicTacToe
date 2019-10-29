@@ -86,3 +86,7 @@ div #C3 {
     color:  rgb(146, 146, 180);
     cursor: pointer;
 }
+
+div:hover{
+    background-color:rgb(59, 119, 187) ;
+}
