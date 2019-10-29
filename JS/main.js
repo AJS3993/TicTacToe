@@ -24,8 +24,7 @@ const C1Box = document.getElementById('C1');
 const C2Box = document.getElementById('C2');
 const C3Box = document.getElementById('C3');
 
-var xreset = document.getElementsByClassName('xplayed');
-var oreset = document.getElementsByClassName('oplayed');
+const msg = document.getElementById('msg');
 
 var resetButton = document.getElementById("button");
 /*----- event listeners -----*/
@@ -47,6 +46,11 @@ resetButton.addEventListener('click', reset);
 /*----- functions -----*/
 
 function play(){
+    
+    if (msg.textContent !== 'Click a square!'){
+        return
+    }
+
     if (this.className == "oplayed"){
         return
     }
@@ -67,7 +71,7 @@ function play(){
         render()
         return;
     }
-    
+
 
 
 function render(){
