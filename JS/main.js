@@ -50,7 +50,6 @@ function play(){
     if (msg.textContent !== 'Click a square!'){
         return
     }
-
     if (this.className == "oplayed"){
         return
     }
@@ -223,7 +222,7 @@ if (oArray.includes('A3')){
     }
 }
 
-if (turnNum == 9){
+if (turnNum == 9 && msg.textContent == 'Click a square!'){
     document.getElementById("msg").innerHTML = "Draw" 
             setTimeout(reset, 2000)
 }
